@@ -1,0 +1,58 @@
+.pros-cons-list {
+    margin: 0 auto;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 150px;
+    .pros-cons-list-header {
+        background-color: $gray;
+        color: $white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .pros-cons-list-body {
+        display: flex;
+        width: 100%;
+
+        .list {
+            border: 1px solid;
+            width: 100%;
+            .list-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                border-bottom: 1px solid;
+                height: 40px;
+            }
+
+            .list-items {
+                margin-top: 8px;
+                width: 100%;
+                .list-item {
+                    width: 100%;
+                    display: flex;
+                    padding-left: 10px;
+                    .list-item-id {
+                        margin-right: 8px;
+                    }
+                    .list-item-body {
+                        height: 35px;
+                        input {
+                            border: 1px solid #ffffff;
+                            &:active {
+                                border: 1px solid #e60;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
